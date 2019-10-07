@@ -39,7 +39,7 @@ console.log('first half upper second half lower: ' + capLow);
 
 function capitalizeTheFirst(string) {
   let capArr = string.split(' ');
-  // do something to the strings to make them capitalized
+  console.log(capArr)
   for (i = 0; i < capArr.length; i++) {
     // stuff here
   };

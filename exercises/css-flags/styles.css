@@ -1,0 +1,288 @@
+
+div {
+  width: 30%;
+  height: 210px;
+  margin: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+  position: relative;
+}
+
+.France {
+  border: 1px solid grey;
+  background-color: white;
+}
+
+.France .Red {
+position: absolute;
+margin: 0;
+height: 100%;
+width: 33%;
+right: 0;
+background-color: red;
+}
+.France .Blue {
+  position: absolute;
+  margin: 0;
+  height: 100%;
+  width: 33%;
+  background-color: blue;
+}
+
+.Germany {
+  border: 1px solid grey;
+  background-color: white;
+}
+
+.Germany .Black {
+  margin: 0;
+  width: 100%;
+  height: 33%;
+  background-color: black;
+}
+.Germany .Red {
+  margin: 0;
+  width: 100%;
+  height: 33%;
+  background-color: red;
+}
+.Germany .Yellow {
+  margin: 0;
+  width: 100%;
+  height: 33%;
+  background-color: yellow;
+}
+
+.Madagascar {
+  border: 1px solid grey;
+  background-color: white;
+}
+.Madagascar .White {
+  height: 100%;
+  width: 33.33%;
+  left: 0;
+  position: absolute;
+  margin: 0;
+  background-color: white;
+}
+.Madagascar .Red {
+  width: 66.66%;
+  height: 50%;
+  position: absolute;
+  margin: 0;
+  right: 0;
+  background-color: rgb(215, 38, 38);
+}
+.Madagascar .Green {
+  width: 66.66%;
+  height: 50%;
+  position: absolute;
+  margin: 0;
+  right: 0;   
+  bottom: 0;
+  background-color: green;
+}
+
+.Switzerland {
+  border: 1px solid grey;
+  background-color: red;
+}
+.Switzerland .blockleft {
+  position: absolute;
+ display: inline-block;
+ background-color: white;
+ height: 50px;
+ width: 50px;
+ top: 33%;
+ left: 130px;
+}
+.Switzerland .vertical {
+  position: absolute;
+  display: inline-block;
+  background-color: white;
+  width: 50px;
+  height: 150px;
+  top: 10%;
+  left: 180px;
+}
+
+.Switzerland .blockright {
+  position: absolute;
+  display: inline-block;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  top: 33%;
+  right: 147px;
+}
+
+.Sweden {
+  border: 1px solid grey;
+  background-color: blue;
+}
+.Sweden .vert {
+  position: absolute;
+  margin: 0;
+  display: inline-block;
+  height: 100%;
+  width: 30px;
+  background-color: yellow;
+  left: 20%;
+}
+.Sweden .horz {
+  position: absolute;
+  margin: 0;
+  display: inline-block;
+  height: 30px;
+  width: 100%;
+  background-color: yellow;
+  top: 42%;
+}
+
+.Gambia {
+  border: 1px solid grey;
+  background-color: white;
+}
+.Gambia .red {
+  height: 33.33%;
+  background-color: red;
+  margin: 0;
+  width: 100%;
+}
+.Gambia .bluewhite {
+  height: 33.33%;
+  background-color: blue;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 11px solid white;
+  border-bottom: 11px solid white;
+}
+.Gambia .green {
+  height: 33.33%;
+  background-color: green;
+  margin: 0;
+  width: 100%;
+}
+
+.Tonga {
+  position: relative;
+  border: 1px solid grey;
+  background-color: rgb(210, 0, 0);
+}
+.Tonga .whitebox {
+ width: 40%;
+ height: 50%;
+ background-color: white;
+ position: absolute;
+ margin: 0;
+}
+.Tonga .whitebox .redvert {
+  position: absolute;
+  margin: 0;
+  display: inline-block;
+  height: 70%;
+  width: 30px;
+  background-color: rgb(210, 0, 0);
+  left: 36%;
+  top: 15%;
+}
+.Tonga .whitebox .redhorz {
+  position: absolute;
+  margin: 0;
+  display: inline-block;
+  height: 30px;
+  width: 50%;
+  background-color: rgb(210, 0, 0);
+  top: 36%;
+  left: 20%;
+}
+
+.Japan {
+  border: 1px solid grey;
+  background-color: white;
+}
+.Japan .reddot {
+  background-color: rgb(187, 0, 0);
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: 28%;
+  left: 40%;
+}
+
+.Greece {
+  position: relative;
+  border: 1px solid grey;
+  background-color: white;
+}
+.Greece .cross {
+  width: 98px;
+  height: 98px;
+  background-color: blue;
+  position: absolute;
+  margin: 0;
+ 
+}
+.Greece .cross .bluevert {
+  position: absolute;
+  margin: 0;
+  display: inline-block;
+  height: 100%;
+  width: 20px;
+  background-color: white;
+  left: 38%;
+}
+.Greece .cross .bluehorz {
+  position: absolute;
+  margin: 0;
+  display: inline-block;
+  height: 20px;
+  width: 100%;
+  background-color: white;
+  top: 40%;
+}
+.Greece .tophorz {
+  display: inline-block;
+  width: 324px;
+  height: 98px;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+
+  /* each line is 23.33 px tall */
+}
+.Greece .tophorz .blueline {
+
+}
+.Greece .bottomhorz .blueline {
+
+}
+.Greece .bottomhorz {
+  display: inline-block;
+  width: 100%;
+  height: 110px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+.Greece .bottomhorz .blueline {
+
+}
+.Greece .bottomhorz .whiteline {
+  
+}
+
+.Niger {
+  border: 1px solid grey;
+  background-color: white;
+}
+
+.Maldives {
+  border: 1px solid grey;
+  background-color: white;
+}

@@ -1,0 +1,72 @@
+.container {
+  height: 550px;
+  top: 100px;
+  position: relative;
+  width: 800;
+  margin: 0 auto;
+}
+
+.pinkrectangle {
+  background-color: #F5C6D6;
+  height: 100px;
+}
+
+.neonpink {
+  background-color: #EE2E84;
+  height: 100px;
+  margin-top: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
+  width: 193px;
+  display: inline-block;
+}
+
+.neonpinkleft {
+  background-color: #EE2E84;
+  height: 100px;
+  margin-left: 0px;
+  width: 193px;
+  display: inline-block;
+}
+
+.neonpinkright {
+  background-color: #EE2E84;
+  height: 100px;
+  margin-right: 0px;
+  width: 193px;
+  display: inline-block;
+}
+
+.blueboxright {
+  background-color: #85CFD8;
+  height: 100px;
+  margin-left: 4px;
+  display: inline-block;
+  width: 394px;
+}
+
+.blueboxleft {
+  background-color: #85CFD8;
+  height: 100px;
+  margin-right: 4px;
+  display: inline-block;
+  width: 394px;
+}
+
+.greenone {
+  background-color: #8DC63F;
+  height: 100px;
+  margin: 4px;
+  margin-left: 0px;
+  display: inline-block;
+  width: 595px;
+}
+
+.orangediv {
+  background-color: #E76E34;
+  height: 100px;
+  margin: 4px;
+  margin-right: 0px;
+  display: inline-block;
+  width: 193px;
+}

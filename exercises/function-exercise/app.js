@@ -10,6 +10,14 @@ console.log('adding 3 numbers: ' + addNumsAnswer);
 
 // take 3 nums and returns largest
 
+function otherBiggest(a, b, c) {
+  return a > b ? a : (b > c ? b : c);
+}
+
+let otherBig = otherBiggest(3, 44, 22);
+console.log('other biggest: ' + otherBig);
+
+
 function whichIsBiggest(a, b, c) {
   if (a > b && a > c) {
     return a;
@@ -53,8 +61,8 @@ function string20(string) {
 }
 
 function standardizeLength(str) {
-  if string20.length <= 20 {
-    rturn str + str;
+  if (str.length <= 20) {
+    return str + str;
   } else {
     str.slice()
   }
@@ -77,15 +85,16 @@ console.log(twentyString);
 //                  [1, 1, 2, 3, 5, 8, 13]
 
 function fibFunc(n) {
-  let fibArr = [];
-  let starterArr = [];
-  for (let i = 0; i < n; i++) {
-    starterArr.push(i);
-  }
-  for (let j = 0; j < starterArr.length; j++) {
-    fibArr.push(starterArr[j]);
-  }
-  return fibArr;
+        //       [0, 1, 2, 3, 4, 5, 6]
+  //             [1, 1, 2, 3, 5, 8, 13]
+  // let theArr = [];
+  // for (let i = 0; i < n; i++) {
+  //   theArr.push(i)
+  // }
+  // for (let j = 0; j < theArr.length; j++) {
+  //   theArr[j] = theArr[j] + 
+  // }
+  // return theArr;
 }
 
 let fibonacci = fibFunc(8);
@@ -96,11 +105,23 @@ console.log('fibonacci: ' + fibonacci);
 // frequently occurring letter in that string. ( White spaces count as a letter )
 
 function mostChars(string) {
-  // use string.split() here ????????
-  for (let i = 0; i < string.length; i++) {
-    
+  // take the string
+  // split string into individual letters
+  // will need to go over each letter and count 
+  // how many times it comes up
+  splitty = string.split('');
+  for (i = 0; i < splitty.length; i++) {
+    for (j = 0; j < string.length; j++) {
+      if (i[j] = i) {
+       
+          
+      }
+    }
   }
+    
+  
 }
 
 let frequentChars = mostChars('randomstringhere');
-console.log(frequentChars);
+  // should return r?
+// console.log(frequentChars);
