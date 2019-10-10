@@ -62,5 +62,20 @@ function capsEveryWord(string) {
   return joinedString;
 }
 
-let capsEveryWordResult = capsEveryWord('this is a capitalized string');
+let capsEveryWordResult = capsEveryWord('string with every word capitalized');
 console.log('capitalized words --> ' + capsEveryWordResult);
+
+
+
+function capping(string) {
+  let arr = [];
+  let newString = string.split(' ');
+  arr.push(newString);
+  for (let i = 0; i < arr.length; i++) {
+    char = arr[i].charAt(0).toUpperCase();
+    arr[i].charAt(0).toUpperCase() = char;
+  }
+  return arr;
+}
+
+capping('this is a great string for practicing with');

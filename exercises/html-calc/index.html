@@ -1,0 +1,53 @@
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>calculator</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class='container'>
+    <h1>Calculator</h1>
+  <!-- add -->
+  <div class='plusform'>
+    <form name='additionForm' >
+      <input type="number" name="addFirst" required />
+      <h2>+</h2>
+      <input type='number' name='addSecond' required />
+      <button>Add</button>
+    </form>
+    <h2 id='addResult'></h2>
+  </div>
+
+  <!-- subtract -->
+  <div class='minus'>
+    <form name='subtractionForm'>
+      <input type="number" name='subFirst' required />
+      <h2>-</h2>
+      <input type='number' name='subSecond' required />
+      <button>Subtract</button>
+    </form>
+
+    <h2 id='subRes'></h2>
+  </div>
+
+  <!-- multiply -->
+  <div class='multy'>
+    <form name='multiplyForm'>
+      <input type='number' name='multFirst' required/>
+      <h2>x</h2>
+      <input type='number' name='multSecond' required />
+      <button>Multiply</button>
+    </form>
+
+    <h2 id='multRes'></h2>
+  </div>
+</div>
+
+  <script src='./app.js'></script>
+</body>
+
+</html>

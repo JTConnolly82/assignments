@@ -1,0 +1,74 @@
+.container {
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+h1 {
+  margin: 0 auto;
+  text-align: center;
+  background-color: lightgrey;
+  width: 58%;
+  border: 10px solid grey;
+}
+
+h2 {
+  margin-left: 45px;
+}
+
+div {
+  width: 60%;
+  position: relative;
+  left: 20%;
+  top: 10%;
+}
+
+form {
+  padding: 20px;
+  display: inline-block;
+  width: 60%;
+}
+
+.plusform {
+  display: inline-block;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+}
+.minus {
+  display: inline-block;
+  background-color: lightcoral;
+  display: flex;
+  flex-direction: row;
+}
+.multy {
+  display: inline-block;
+  background-color: lightseagreen;
+  display: flex;
+  flex-direction: row;
+}
+
+
+#addResult {
+  display: inline-block;
+  width: 50%;
+  margin-right: 20px;
+  margin-top: 60px;
+  font-size: 3rem;
+}
+
+#subRes{
+  display: inline-block;
+  width: 50%;
+  margin-right: 20px;
+  margin-top: 60px;
+  font-size: 3rem;
+}
+
+#multRes {
+  display: inline-block;
+  width: 50%;
+  margin-right: 20px;
+  margin-top: 60px;
+  font-size: 3rem;
+}

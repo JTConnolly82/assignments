@@ -6,13 +6,11 @@ function addNums(a, b) {
 }
 
 let addNumsAnswer = addNums(2, 5);
-console.log('adding 3 numbers: ' + addNumsAnswer);
+console.log('adding 2  numbers: ' + addNumsAnswer);
 
 // take 3 nums and returns largest
 
-function otherBiggest(a, b, c) {
-  return a > b ? a : (b > c ? b : c);
-}
+const otherBiggest = (a, b, c) =>  a > b ? a : (b > c ? b : c);
 
 let otherBig = otherBiggest(3, 44, 22);
 console.log('other biggest: ' + otherBig);
@@ -68,7 +66,7 @@ function standardizeLength(str) {
   }
 }
 
-let twentyString = string20('thisisalongandverycoolstringfortesting');
+let twentyString = string20('short');
 console.log(twentyString);
 
 
@@ -105,23 +103,18 @@ console.log('fibonacci: ' + fibonacci);
 // frequently occurring letter in that string. ( White spaces count as a letter )
 
 function mostChars(string) {
-  // take the string
-  // split string into individual letters
-  // will need to go over each letter and count 
-  // how many times it comes up
-  splitty = string.split('');
-  for (i = 0; i < splitty.length; i++) {
-    for (j = 0; j < string.length; j++) {
-      if (i[j] = i) {
-       
-          
-      }
-    }
+  // take in the string
+  // go over each letter
+  // count how often it comes up
+  for (let i = 0; i < string.length; i++) {
+   // stuff here
   }
+  
     
   
 }
 
 let frequentChars = mostChars('randomstringhere');
   // should return r?
-// console.log(frequentChars);
+console.log('most frequent chars --->   ' + frequentChars);
+
