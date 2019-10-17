@@ -19,6 +19,9 @@ const newMessages = document.createElement('h3');
 
 const theme = document.getElementById('theme-drop-down');
 
+let form = document.querySelector('form');
+
+
 
 
 
@@ -37,13 +40,14 @@ clear.addEventListener('click', function() {
   for (let i = 0; i < messages.length; i++) {
     messages[i].innerHTML = '';
   }
+  console.log(messages[0]);
 })
 
 let funMessage = [
-  'hi my good friend',
+  'hello good sir',
   'whatup bud',
-  'we are such good friends right',
-  'like, the best friends ever dude'
+  'good day now',
+  'cheerio'
 ]
 
 window.addEventListener('load', function() {
@@ -55,7 +59,6 @@ window.addEventListener('load', function() {
 let leftMessages = document.getElementsByClassName('message left');
 let rightMessages = document.getElementsByClassName('message right');
 
-console.dir(theme.length);
 
 
 theme.addEventListener('change', function() {
@@ -63,10 +66,11 @@ theme.addEventListener('change', function() {
     if (theme[i].innerText === 'red/black') {
       for (let i = 0; i < leftMessages.length; i++) {
         leftMessages[i].style.backgroundColor = 'red';
-        rightMessages[i].style.backgroundColor = 'black'
+        rightMessages[i].style.backgroundColor = 'black';
         rightMessages[i].style.color = 'white';
       }
-    } else if (theme[i].innerText === 'blue/brown') {
+    }
+    else if (theme[i].innerText === 'blue/brown') {
       for (let i = 0; i < leftMessages.length; i++) {
         leftMessages[i].style.backgroundColor = 'burlywood';
         rightMessages[i].style.backgroundColor = 'lightblue';
@@ -74,9 +78,31 @@ theme.addEventListener('change', function() {
       }
     }
   }
-  
+})
 
 
+let submit = document.getElementById('submit');
+let boxTent = document.getElementById('input');
+let newMessage = document.createElement('div');
+
+
+
+submit.addEventListener('click', function () {
+  event.preventDefault();
+  let content = input.value;
+  let newDiv = document.createElement('div');
+  newDiv.innerText = content;
+  messages[0].nextElementChild = newDiv;
+  if (messages[0].lastElementChild.className === 'message right'){
+    newDiv.className = 'message left';
+  } else if (!messages[0].lastElementChild) {
+    messages[0].firstChild = newDiv;
+  }
+  else {
+    newDiv.className = 'message right';
+  }
+  messages[0].appendChild(newDiv);
+  form.reset();
 })
 
 //append the existing DOM element

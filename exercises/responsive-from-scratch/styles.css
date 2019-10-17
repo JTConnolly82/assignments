@@ -1,0 +1,144 @@
+.container {
+  display: grid;
+  grid-template-columns: 4;
+  grid-template-rows: repeat(8, 100px);
+  grid-gap: 9px;
+  width: 800px;
+  position: absolute;
+  left: 20%;
+  top: 10%;
+}
+
+.pinkrectangle {
+  background-color: #F5C6D6;
+  height: 100px;
+  grid-column: 1 / 5;
+}
+
+.neonpink {
+  background-color: #EE2E84;
+  height: 100px;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.neonpink1 {
+  background-color: #EE2E84;
+  height: 100px;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.neonpinkleft {
+  background-color: #EE2E84;
+  height: 100px;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.neonpinkright {
+  background-color: #EE2E84;
+  height: 100px;
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
+
+.blueboxright {
+  background-color: #85CFD8;
+  height: 100px;
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+.blueboxleft {
+  background-color: #85CFD8;
+  height: 100px;
+  grid-column: 3 / 5;
+  grid-row: 3 / 4;
+}
+
+.greenone {
+  background-color: #8DC63F;
+  height: 100px;
+  grid-column: 1 / 4;
+}
+
+.orangediv {
+  background-color: #E76E34;
+  height: 100px;
+  grid-column: 4 / 5;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: repeat(8, 100px);
+    grid-gap: 4px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .pinkrectangle {
+    background-color: #F5C6D6;
+    height: 100px;
+    grid-column: 1 / 5;
+    grid-row: 1 / 2
+  }
+  
+  .neonpink {
+    background-color: #EE2E84;
+    height: 100px;
+    grid-column: 1 / 5;
+    grid-row: 2 / 3
+  }
+  
+  .neonpinkleft {
+    background-color: #EE2E84;
+    height: 100px;
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+  }
+  
+  .neonpinkright {
+    background-color: #EE2E84;
+    height: 100px;
+    grid-column: 1 / 5;
+    grid-row: 4 / 5;
+  }
+  
+  .blueboxright {
+    background-color: #85CFD8;
+    height: 100px;
+    grid-column: 1 / 5;
+    grid-row: 5 / 6;
+  }
+  
+  .blueboxleft {
+    background-color: #85CFD8;
+    height: 100px;
+    grid-column: 1 / 5;
+    grid-row: 6 / 7;
+  }
+  
+  .greenone {
+    background-color: #8DC63F;
+    height: 100px;
+    grid-column: 1 / 5;
+    grid-row: 7 / 8;
+  }
+  
+  .orangediv {
+    background-color: #E76E34;
+    height: 100px;
+    grid-column: 1 / 5;
+    grid-row: 8 / 9;
+  }
+}
+
+.fakeclass {
+  color: aquamarine;
+  color: lightseagreen
+}

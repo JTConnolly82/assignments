@@ -280,6 +280,22 @@ background-color: red;
 .Niger {
   border: 1px solid grey;
   background-color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: repeat(3, 1fr); 
+}
+.Niger #top {
+  grid-column: 1 / 4;
+  background-color: orange;
+}
+.Niger #middle {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: orange;
+}
+.Niger #bottom {
+  grid-column: 1 / 4;
+  background-color: rgb(2, 117, 2);
 }
 
 .Maldives {
