@@ -1,0 +1,148 @@
+{
+  "appetizers": [
+    {
+      "name": "buffalo-chicken-dip",
+      "description": "delicious buff dip",
+      "ingredients": [
+        "cheese",
+        "fat",
+        "buffalo-sauce"
+      ]
+    },
+    {
+      "name": "soft-pretzel",
+      "description": "a pretzel that is hot",
+      "ingredients": [
+        "pretzel",
+        "heat"
+      ]
+    },
+    {
+      "name": "tortilla-soup",
+      "description": "very good",
+      "ingredients": [
+        "tortilla-strips",
+        "soup"
+      ]
+    },
+      {
+      "salad": [
+        "plants",
+        "croutons",
+        "disappointment"
+      ]
+    }
+  ],
+  "cold-sandwiches": [
+    {
+      "name": "italian",
+      "description": "sandwich straight from italy",
+      "ingredients": [
+        "bread",
+        "provalone",
+        "salami",
+        "ham",
+        "italian-dressing"
+      ]
+    },
+    {
+      "name": "p-b-j",
+      "description": "the old classic",
+      "ingredients": [
+        "bread",
+        "pb",
+        "jelly"
+      ]
+    },
+    {
+      "name": "cheese-sandwich",
+      "description": "its just cheese on the sandwich",
+      "ingredients": [
+        "cheese",
+        "bread"
+      ]
+    }
+  ],
+  "hot-sandwiches": [
+    {
+      "name": "philly",
+      "description": "best",
+      "ingredients": [
+        "steak",
+        "onions",
+        "cheese",
+        "bread"
+      ]
+    },
+    {
+      "name": "chick-fil-a-sandy",
+      "description": "so good",
+      "ingredients": [
+        "fried chicken",
+        "bread",
+        "pickels"
+      ]
+    },
+    {
+      "name": "grilled-cheese",
+      "description": "its a good one",
+      "ingredients": [
+        "bread",
+        "cheese",
+        "heat"
+      ]
+    }
+  ],
+  "desserts": [
+    {
+      "name": "brownie",
+      "description": "420 brah",
+      "ingredients": [
+        "chocolate",
+        "baking ingredients"
+      ]
+    },
+    {
+      "name": "ice-cream",
+      "description": "its good stuff",
+      "ingredients": [
+        "cream",
+        "coldness"
+      ]
+    },
+    {
+      "name": "cheese-cake",
+      "description": "something i like to eat",
+      "ingredients": [
+        "cake",
+        "cheese?"
+      ]
+    }
+  ],
+  "drinks": [
+    {
+      "name": "coke",
+      "description": "classic",
+      "ingredients": [
+        "sugar",
+        "water"
+      ]
+    },
+    {
+      "name": "sprite",
+      "description": "a good drink",
+      "ingredients": [
+        "sugar",
+        "water"
+      ]
+    },
+    {
+      "name": "sugar-water",
+      "description": "same as every other drink",
+      "ingredients": [
+        "sugar",
+        "water"
+      ]
+    }
+  ] 
+}

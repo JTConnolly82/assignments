@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+
+#main {
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgreen;
+  width: 40vw;
+}
+#main h1 {
+  /* display: block; */
+  font-family: 'Abril Fatface', cursive;
+  text-decoration: underline;
+}
+
+.todo {
+  display: block;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.completed-span {
+  display: flex;
+}
+
+.delbutton {
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: black;
+  color: lightgreen;
+  font-family: 'Bree Serif', serif;
+}
+
+.delbutton:hover {
+  cursor: pointer;
+}
+
+.check {
+  padding: 4px;
+}
