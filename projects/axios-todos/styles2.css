@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Spicy+Rice&display=swap');
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 220px 1000px;
+ background-color: aqua;
+}
+
+.header {
+  grid-column: 1 / 4;
+  background-image: linear-gradient(pink, aqua); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.header img {
+  width: 90px;
+  height: 110px;
+}
+.header h1 {
+  font-family: 'Spicy Rice', cursive;
+  font-size: 100px;
+}
+
+.main {
+  grid-column: 2 / 3;
+  background-color: rgb(2, 228, 228);
+  border-radius: 20px;
+  background-size: cover;
+}
+
+.twodewform {
+  width: 600px;
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  margin-left: 22%;
+  height: 270px;
+  font-family: 'Spicy Rice', cursive;
+  font-size: 25px;
+}
+.twodewform button {
+  background-color: rgb(250, 123, 145);
+  padding: 5px;
+  width: 30%;
+  align-self: center;
+  border: 1px solid pink;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-family: 'Spicy Rice', cursive;
+  font-size: 22px;
+}
+.twodewform input {
+  background-color: rgb(225, 225, 225);
+  outline: none;  
+  border: none;
+  border-bottom: 2px solid black;
+  height: 100px;
+  background-color: aqua;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.formbuttondiv {
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  width: 300px;
+  margin-top: 25px;
+}
+button:hover {
+  cursor: pointer;
+}
+
+#dolphin {
+  width: 50px;
+  height: 70px;
+}
+
+
+/* todo background */
+/* https://storage.googleapis.com/glaze-ecom.appspot.com/images/QG3CXMfIH/thumbs/232.png */

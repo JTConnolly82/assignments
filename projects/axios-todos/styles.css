@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
 
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -13,18 +14,22 @@
 }
 
 #mainlist {
-  display: grid;
-  grid-template-rows: repeat(auto, 200px);
-  grid-template-columns: 50px 1fr 50px;
+  display: flex;
+  flex-direction: column;
 }
-
 .item {
   padding: 10px;
   border: 1px solid black;
   border-radius: 7px;
-  grid-column: 2 / 3;
+ width: 700px;
   display: flex;
-  
+  justify-content: space-between;
+}
+
+.titledescdiv {
+  display: flex;
+  flex-direction: column;
+
 }
 
 .itemtitle {
@@ -40,5 +45,14 @@
 }
 
 .itemimage {
+  width: 110px;
+  padding: 5px;
+}
+
+#deletebutton {
+  margin-left: 4px;
+}
+
+#editbutton {
 
 }
