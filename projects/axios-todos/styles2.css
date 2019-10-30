@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Spicy+Rice&display=swap');
 
+
 .container {
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;
-  grid-template-rows: 220px 1000px;
- background-color: aqua;
+  grid-template-rows: 220px auto;
+  background-color: aqua;
 }
 
 .header {
@@ -16,6 +17,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  
 }
 .header img {
   width: 90px;
@@ -28,9 +30,9 @@
 
 .main {
   grid-column: 2 / 3;
-  background-color: rgb(2, 228, 228);
-  border-radius: 20px;
-  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 74px;
 }
 
 .twodewform {
@@ -42,6 +44,7 @@
   height: 270px;
   font-family: 'Spicy Rice', cursive;
   font-size: 25px;
+  margin-bottom: 150px;
 }
 .twodewform button {
   background-color: rgb(250, 123, 145);
@@ -53,6 +56,8 @@
   margin-top: 10px;
   font-family: 'Spicy Rice', cursive;
   font-size: 22px;
+  border: 3px solid black;
+  border-radius: 4px;
 }
 .twodewform input {
   background-color: rgb(225, 225, 225);
@@ -72,7 +77,7 @@
   width: 300px;
   margin-top: 25px;
 }
-button:hover {
+.twodewform button:hover {
   cursor: pointer;
 }
 
@@ -82,5 +87,103 @@ button:hover {
 }
 
 
-/* todo background */
-/* https://storage.googleapis.com/glaze-ecom.appspot.com/images/QG3CXMfIH/thumbs/232.png */
+.todoBox {
+  background-color: rgb(1, 242, 242);
+  border-radius: 25px;
+  font-family: 'Spicy Rice', cursive;
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 150px 1fr 260px;
+  padding: 15px;
+  align-items: center;
+  margin-top: 22px;
+  padding: 30px;
+  width: 70%;
+  align-self: center;
+  /* background-image: url("https://storage.googleapis.com/glaze-ecom.appspot.com/images/QG3CXMfIH/thumbs/232.png"); */
+}
+
+
+.checkLabel {
+  font-size: 9px;
+}
+.checkDiv {
+  display: flex;
+  height: auto;
+  align-items: center;
+}
+
+.titledesc {
+  justify-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / 2;
+}
+
+.submitterbutton {
+  font-size: 19px;
+  font-family: 'Spicy Rice', cursive;
+  background-color: lightgreen; 
+  margin-bottom: 7px;
+}
+.submitterbutton:hover {
+  cursor: pointer;
+}
+
+.deletebutton {
+  font-size: 19px;
+  font-family: 'Spicy Rice', cursive;
+  background-color: lightgreen; 
+}
+.deletebutton:hover {
+  cursor: pointer;
+}
+.editbutton {
+  background-color: lightgreen;
+  font-size: 19px;
+  font-family: 'Spicy Rice', cursive;
+  margin-bottom: 8px;
+}
+.editbutton:hover {
+  cursor: pointer;
+}
+
+.editpicinput {
+  grid-column: 3 / 4;
+}
+
+.editpicbutton {
+  font-size: 19px;
+  font-family: 'Spicy Rice', cursive;
+  background-color: lightgreen; 
+  margin-top: 5px;
+  grid-column: 3 / 4;
+  width: 70%;
+  margin-left: 42px;
+  font-size: 22px;
+  border: 3px solid black;
+  border-radius: 4px;
+}
+.editpicbutton:hover {
+  cursor: pointer;
+}
+
+.todoboxinputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todoboxinputs button {
+  width: auto;
+  border: 3px solid black;
+  border-radius: 4px;
+  padding: 3px
+}
+
+.todoBox img {
+  border-radius: 6px;
+  width: 260px;
+  height: 190px;
+  grid-column: 3 / 4;
+}
+

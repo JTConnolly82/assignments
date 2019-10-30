@@ -13,8 +13,8 @@ form.addEventListener('submit', function(e) {
                    <div>${item}</div>
                    <button>edit</button>
                    <button>X</button>
-                  </li>
-  `
+                  </li>`
+
   let li = document.createElement('li')
   let div = document.createElement('div')
   let editButton = document.createElement('button')
@@ -48,6 +48,7 @@ list.addEventListener('click', function(e) {
       list.children[i].children[1].innerText = 'submit';
       list.children[i].removeChild(list.children[i].children[0]);
       list.children[i].appendChild(theinput);
+      
     }
   }
 })
