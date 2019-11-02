@@ -14,7 +14,6 @@ const Square = (props) => {
 
   return (
     <div style={styles}>
-
     </div>
   )
 }
