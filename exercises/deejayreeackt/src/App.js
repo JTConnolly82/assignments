@@ -3,8 +3,17 @@ import DeejContainer from './DeejContainer';
 
 
 const App = () => {
+
+  let appStyles = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center'
+  }
+
   return (
-    <DeejContainer />
+    <div style={appStyles}>
+      <DeejContainer />
+    </div>
   )
 }
 

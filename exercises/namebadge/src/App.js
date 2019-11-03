@@ -1,14 +1,12 @@
 import React from 'react';
-import Container from './Container';
+import BadgeContainer from './BadgeContainer';
 
 
-
-function App() {
+const App = () => {
   return (
-    <div>
-        <Container />
-    </div>
+    <BadgeContainer />
   )
 }
+
 
 export default App;
