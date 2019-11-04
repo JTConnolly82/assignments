@@ -19,7 +19,6 @@ class BadgeContainer extends React.Component {
 
   handleChange = (e) => {
     let {value, name} = e.target;
-    console.log(name + ' ' + value);
     this.setState({
       [name]: value
     })
@@ -35,14 +34,12 @@ class BadgeContainer extends React.Component {
       birthPlace: this.state.birthPlace,
       favFood: this.state.favFood,
       about: this.state.about
-    }
+    };
     let newBadges = [...this.state.badges];
       newBadges.push(newBadge);
-      console.log(newBadges);
     this.setState({
       badges: newBadges
-    }
-    )
+    });
     e.target.reset();
   }
 
@@ -71,7 +68,7 @@ class BadgeContainer extends React.Component {
             <input className='oneLineInput' type="text" placeholder='place of birth' name='birthPlace' onChange={this.handleChange} required/>
             <input className='oneLineInput' type="text" placeholder='fav food' name='favFood' onChange={this.handleChange} required/>
           </div>
-          <textarea  className='theTextArea' placeholder='tell about yourself' name='about' onChange={this.handleChange} required/>
+          <textarea  className='theTextArea' placeholder='tell about yourself' name='about' onChange={this.handleChange} maxLength = "150" required />
           <button className='submitbutton'>Submit!</button>
         </form>
         {badgeComponents}
