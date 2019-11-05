@@ -49,9 +49,9 @@ class Todo extends React.Component {
     });
   }
 
-  handleEdit = () => {
+  handleEdit = (prev) => {
     this.setState({
-      editing: !this.state.editing
+      editing: !prev.editing
     })
   }
 
