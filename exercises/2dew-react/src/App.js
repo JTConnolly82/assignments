@@ -36,14 +36,14 @@ class App extends React.Component {
     });
   }
 
+ 
   handleDeleteClick = (deletedTodo) => {
-    axios.delete('https://api.vschool.io/johnconnolly/todo/' + deletedTodo._id).then((res)=>{
+    axios.delete('https://api.vschool.io/johnconnolly/todo/' + deletedTodo._id).then(()=>{
       this.setState((prev)=>{
-        let copiedTodos = [...prev.todos];
-        copiedTodos.filter((todo)=>{
+        const todos = prev.todos.filter((todo)=>{
           return todo._id !== deletedTodo._id
-        });
-        return {todos: copiedTodos};
+        })
+        return {todos: todos};
       });
     });
   }
