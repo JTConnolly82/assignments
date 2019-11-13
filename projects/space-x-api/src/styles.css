@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
+
+* {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.nav-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 30px;
+  padding: 7px;
+}
+
+
+.nav-links {
+  text-decoration: none;
+  color: #969b9f;
+  padding: 4px;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.nav-links:hover {
+  /* border-bottom: 1.7px solid #da7c65; */
+  background: -webkit-linear-gradient(#df431d, #f78383);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-style {
+  color: #cccccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d1d1d;
+  box-shadow: 2px 1px 1px grey
+}
+
+
+.home-wrap {
+  display: flex;
+  height: 90vh;
+  background-color: black;
+}
+.home-wrap h1 {
+  font-size: 4rem;
+  color: whitesmoke;
+}
+
+
+
+.title-div-roadster {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title-div-roadster h1 {
+  background: -webkit-linear-gradient(#df431d, #f78383);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 8rem;
+  margin-right: 90px;
+}
+.title-div-roadster p {
+  margin-right: 20px;
+}
+
+.whole-roadster {
+  background-color: #101110;
+  color: rgb(215, 215, 215);
+}
+
+.roadster-info {
+  display: flex;
+  padding: 20px;
+}
+
+.roadster-distance-wrap {
+  background-color: #101010;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.scale-size {
+display: grid;
+grid-template-columns: auto 8fr auto;
+}
+#earth {
+  max-width: 90px;
+  grid-column: 1/2;
+}
+#mars {
+  max-width: 90px;
+  grid-column: 4/5;
+}
+#roadster {
+  align-self: center;
+}
+.mission-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission-form-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission-form-inputs > input{
+  display: flex;
+  background-color: rgb(225, 225, 225);
+  outline: none;  
+  border: none;
+  background-color: #101110;
+  border-bottom: 2px solid rgb(57, 56, 56);
+  height: 100px;
+  margin-top: 10px;
+  font-size: 20px;
+  color: rgb(215, 215, 215);
+}
+.mission-form > button {
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  max-width: 150px;
+  margin-top: 20px;
+}
+.checkdiv {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+}
+
+.mission-clear {
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  max-width: 150px;
+  margin-top: 20px;
+}
+
+.mission-wrapper {
+  background-color: #101110;
+}
+
+.top-mission-styles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+
+.top-mission-styles h1 {
+  background: -webkit-linear-gradient(#df431d, #f78383);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6rem;
+}
+
+.mission-info-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission-name {
+    background: -webkit-linear-gradient(#c73c19, #f78383);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+}
+
+.missionWrap {
+  border: 1px solid grey;
+  padding: 17px;
+  background-color: black;
+  max-width: 800px;
+  color: #969b9f;
+  margin-bottom: '28px';
+}
+
+
