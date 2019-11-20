@@ -1,25 +1,49 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
-  const rocketPic = {
-    width: '400px',
-    height: '500px',
-    padding: '6px',
-    backgroundImage: 'linear-gradient(to top left, #df431d -12%, #d3d3d3 98%)',
-    alignSelf: 'center',
-    marginTop: '70px',
-    borderRadius: '2px'
+
+  const blob = {
+    background: "url('https://fsmedia.imgix.net/da/c9/dc/31/71d9/4020/a90c/48225e0acdf1/the-starship-mk1-at-the-boca-chica-facility-in-texas.jpeg')",
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: '60% 40%',
+    borderRadius: '59% 61% 76% 49% / 30% 66% 44% 83% ',
+    width: '550px',
+    height: '80vh',
+    display: 'flex',
+    flexDirection: 'center',
+    alignItems: 'center',
   }
 
+  let homeMissionButton = {
+    background: '-webkit-linear-gradient(#df431d, #f78383)',
+    border: 'none',
+    cursor: 'pointer',
+    padding: "10px 20px 10px 20px",
+    fontSize: "20px",
+    borderRadius: "10px",
+    fontWeight: 'bolder',
+    maxWidth: '300px',
+    border: '2px solid #e34e2e'
+  }
   
-
+  let rightHome = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center'
+  }
 
   return (
     <div className='home-wrap'>
-     <div>
-      <img style={rocketPic} src="https://fsmedia.imgix.net/da/c9/dc/31/71d9/4020/a90c/48225e0acdf1/the-starship-mk1-at-the-boca-chica-facility-in-texas.jpeg" alt="big rocket"/>
+     <div style={blob}>
+     </div>
+     <div style={rightHome}>
+       <h1>SpaceX</h1>
+       <button style={homeMissionButton}><Link style={{textDecoration: 'none', color: 'black'}} to="/Missions">Where We've Been</Link></button>
+       {/* <h1>Exploration</h1>
+       <h1>Technologies</h1> */}
      </div>
     </div>
   )

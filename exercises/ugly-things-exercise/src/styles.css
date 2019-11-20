@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Loved+by+the+King&display=swap');
+
+
+.fake-test-class {
+  color: #cd30cd
+}
+
+
+.ugly-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F3FED6;
+  font-family: 'Loved by the King', cursive;
+}
+
+.ugly-form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+}
+.form-input-div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+.form-input-div input {
+  border-radius: 8% 92% 11% 89% / 85% 13% 87% 15%;
+  border: 1px solid rgb(154, 154, 154);
+  text-align: center;
+}
+
+#submit-button-uglyform {
+  font-family: 'Loved by the King', cursive;
+  font-size: 1.5rem;
+  border: 2px solid #770087;
+  background-color: #00D782;
+  border-radius: 86% 14% 91% 9% / 19% 81% 19% 81%;
+  cursor: crosshair;
+  margin-bottom: 30px;
+}
+
+.ugly-list-wrap {
+  font-size: 1.5rem;
+}
+
+.ugly-component {
+  border: 2px solid black;
+  padding: 12px;
+  width: 400px;
+  border-radius: 12% 86% 28% 72% / 77% 22% 78% 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  font-family: 'Loved by the King', cursive;
+}

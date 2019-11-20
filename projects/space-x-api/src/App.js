@@ -4,7 +4,6 @@ import Home from './Home';
 import Nav from './Nav';
 import Roadster from './Roadster';
 import Missions from './Missions';
-import Rockets from './Rockets';
 
 
 
@@ -16,7 +15,6 @@ const App = () => {
         <Route exact path="/" component={Home}/>
         <Route path="/Roadster" component={Roadster}/>
         <Route path="/Missions" component={Missions}/>
-        <Route path="/Rockets" component={Rockets} />
       </Switch>
     </div>
   )
