@@ -15,9 +15,26 @@ const PORT = 8000;
 //     "_id": "23k4lh23h2"
 // }
 
+const todoArr = [
+  {
+  title: 'first one here',
+  description: 'the first todo',
+  _id: '1'
+  },
+  {
+    title: 'another thing',
+    description: 'todos are great',
+    _id: '2'
+  },
+  {
+    title: 'and... another!',
+    description: 'i love todo apps',
+    _id: '3'
+  }
+];
+
 app.use(express.json());
 
-const todoArr = [];
 
 app.get('/', (req, res) => {
   res.send('hi hello, go to /todos to see the todos!!!');
@@ -25,45 +42,47 @@ app.get('/', (req, res) => {
 
 app.get('/todos', (req, res) => {
   res.send(todoArr);
+  console.log('✨✨✨✨✨✨✨✨')
+  console.log('✨get request😎✨')
+  console.log('✨✨✨✨✨✨✨✨')
+  console.log(todoArr);
 });
 
 // edit the post for the data used on this one
 app.post('/todos', (req, res) => {
-  database.push(rq.body);
+  req.body._id = uuid();
+  todoArr.push(req.body);
   res.send({
     itemAdded: req.body
   })
+  console.log('💥💥 POSTED 💥💥')
+  console.log(todoArr);
 });
 
 //edit the delete for data usedhere
 // :_id is a placeholder for the params object, you can then access
 // the specifics by using params.whatever, try logging these out
 
-app.delete('/places/:_id', (req, res) => {
-  console.log(req.params._id);
-  let {_id} = req.params;
-  let index = database.findIndex(spot => spot._id === _id);
-  database.splice(index, 1);
-  // could also send a string or something else
-  res.send(database);
+app.delete('/todos/:_id', (req, res) => {
+  let index = todoArr.findIndex(todo => todo._id === req.params._id);
+  todoArr.splice(index, 1);
+  res.send(todoArr);
+  console.log('🔥🐲🔥 DELETE SENT')
+  console.log(todoArr)
 });
 
-
-app.put('/places/:_id', (req, res) => {
-  let { _id } = req.params;
-  let updatedSpot = req.body;
-  // foreach used b/c we don't want to return a new array
-  database.forEach(spot => {
-    if (spot._id === _id) {
-      Object.assign(spot, updatedSpot);
+app.put('/todos/:id', (req, res) => {
+  let updatedTodo = req.body;
+  console.log(req.params.id)
+  todoArr.forEach((todo)=>{
+    if (todo._id === req.params._id) {
+      Object.assign(todo, updatedTodo);
     }
   });
-  res.send(database);
+  console.log('✅ PUT REQUEST SUBMITTED ✅');
+  res.send(todoArr);
+  console.log(todoArr);
 });
-
-// ex uuid
-// req.body._id == uuid();
-// works after importing uuid v4
 
 
 
