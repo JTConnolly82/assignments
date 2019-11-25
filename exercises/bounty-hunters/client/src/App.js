@@ -17,7 +17,6 @@ class App extends React.Component {
 
   componentDidMount() {
     axios.get('/jedi').then((res) => {
-      console.log(res.data);
       let theJedis = res.data;
       this.setState({
         jedis: theJedis
@@ -26,8 +25,34 @@ class App extends React.Component {
   };
 
   handleSubmit = (jediObj) => {
-    console.log('submitted')
+    axios.post('/jedi', jediObj).then((res) => {
+      this.setState({
+        jedis: res.data
+      });
+    });
   };
+
+  handleDelete = (jediId) => {
+    console.log(jediId);
+    axios.delete('/jedi/' + jediId).then((res)=>{
+    console.log(res);
+    let newJedis = this.state.jedis.filter((jedi) => jedi._id !== jediId)
+    this.setState({
+        jedis: newJedis
+      })
+    });
+  }
+
+  handleUpdate = (jediId, updatedJedi) => {
+    console.log(jediId);
+    axios.put('/jedi/' + jediId, updatedJedi).then((res) => {
+      this.setState({
+        jedis: res.data
+      })
+    })
+    console.log(this.state.jedis)
+  }
+
 
   titleImg = {
     width: '100px',
@@ -47,7 +72,7 @@ class App extends React.Component {
   render() {
 
     let mappedJedis = this.state.jedis.map((jedi) => {
-      return <Jedi {...jedi}/>
+      return <Jedi handleUpdate={this.handleUpdate} handleDelete={this.handleDelete} key={Math.random()*999} {...jedi}/>
     });
 
     return (

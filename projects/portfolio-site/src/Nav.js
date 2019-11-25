@@ -18,17 +18,35 @@ const Nav = () => {
   return (
     <div className='nav-container'>
       <div className='inner-nav'>
-        <Link className='nav-name' to="/">John Connolly</Link>
-        <hr style={{color: 'black', width: '80%'}}/>
-            {width < 438 ?
-          <div className='phone-hero'>
-            <h2>Software developer based in Salt Lake City, UT 🏔💻 🏠🎿🏔</h2>
-          </div>
+      {width < 438 ?
+        <>
+          {/* <div className='phone-hero'>
+            
+          </div> */}
+        </>
             :
             <div className='nav-links'>
-              <h3>Projects</h3>
-              <h3>About</h3>
-              <h3>Contact</h3>
+            <Link to='projects'>
+              <span id='projects-link'>
+                <span className='inner-nav-link'>
+                  <h3>Projects</h3>
+                </span>
+              </span>
+            </Link>
+            <Link to='/about' >
+              <span id='about-link'>
+                <span className='inner-nav-link'>
+                  <h3>About</h3>
+                </span>
+              </span>
+              </Link>
+              <Link to='/contact'>
+                <span id='contact-link'>
+                  <span className='inner-nav-link'>
+                    <h3>Contact</h3>
+                  </span>
+                </span>
+              </Link>
             </div> 
             } 
       </div>
