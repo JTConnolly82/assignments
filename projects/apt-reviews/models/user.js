@@ -1,12 +1,27 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const aptSchema = new Schema({
-  name: String,
+
+const userSchema = new Schema({
+  name: {
+    type: String,
+    unique: true,
+    required: true,
+    lowercase: true
+  },
   email: String,
-  password: String,
-  //Avatar: Image?
-  reviews: [reviewSchema], //syntax?
+  password: {
+    type: String,
+    required: true
+  },
+  isAdmin: {
+    type: Boolean,
+    default: false
+  },
+  reviews: {
+    type: Schema.Types.ObjectId,
+    ref: 'Review'
+  }
 })
 
-const Review = mongoose.model('Apartment', aptSchema);
+module.exports = mongoose.model('User', userSchema);

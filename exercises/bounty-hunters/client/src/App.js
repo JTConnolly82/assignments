@@ -24,6 +24,8 @@ class App extends React.Component {
     });
   };
 
+ 
+
   handleSubmit = (jediObj) => {
     axios.post('/jedi', jediObj).then((res) => {
       this.setState({

@@ -26,7 +26,7 @@ const Nav = () => {
         </>
             :
             <div className='nav-links'>
-            <Link to='projects'>
+            <Link to='/projects'>
               <span id='projects-link'>
                 <span className='inner-nav-link'>
                   <h3>Projects</h3>
