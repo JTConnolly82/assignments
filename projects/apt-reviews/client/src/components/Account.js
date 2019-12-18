@@ -25,18 +25,19 @@ class Account extends React.Component {
     let theUser = this.props.user._id;
     axios.get(`/user/${theUser}`).then(res => {
       let {name} = res.data[0]
+      console.log(name)
       this.setState({
         user: name
       })
-    })
-  axios.get('/review/user', {user: theUser}).then((res) => {
+    }).then(
+  axios.get('/review/', {user: theUser}).then((res) => {
       let theReviews = res.data.filter(review => {
         return review.user === this.props.user._id
       })
       this.setState({
         userReviews: theReviews
       })
-    })
+    }))
   }
   render() {
 

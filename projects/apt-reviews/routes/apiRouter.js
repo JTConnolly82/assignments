@@ -17,4 +17,35 @@ apiRouter.post('/', (req, res, next) => {
   })
 })
 
+apiRouter.put('/:aptId', (req, res, next) => {
+  Review.findOneAndUpdate({
+        apt: req.params.aptId, 
+        _id: req.body._id
+    }, 
+    req.body.newObj, 
+    {new: true}, 
+    (err, updatedReview) => {
+    if (err) {
+      res.status(500)
+      return next(err)
+    }
+    console.log('review',updatedReview)
+    return res.send(updatedReview)
+  })
+})
+
+apiRouter.delete('/:aptId', (req, res, next) => {
+  Review.findOneAndRemove({
+          apt: req.params.aptId, 
+          _id: req.body._id
+    },
+     req.body.deleteObj, (err, deletedReview) => {
+    if (err) {
+      res.status(500);
+      return next(err)
+    }
+    return res.send(deletedReview);
+  })
+})
+
 module.exports = apiRouter

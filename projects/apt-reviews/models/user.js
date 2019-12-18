@@ -18,10 +18,10 @@ const userSchema = new Schema({
     type: Boolean,
     default: false
   },
-  reviews: {
+  reviews: [{
     type: Schema.Types.ObjectId,
     ref: 'Review'
-  }
+  }]
 })
 
 module.exports = mongoose.model('User', userSchema);

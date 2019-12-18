@@ -10,7 +10,7 @@ class Home extends React.Component {
       <div>
         <div className='home-hero'>
             {/* <h1>Rental Unit Reviews</h1> */}
-            <h2>Search apartment unit reviews</h2>
+            <h2>Read apartment unit reviews</h2>
               <AptSearchbar />
         </div>
         <div className='home-content'>

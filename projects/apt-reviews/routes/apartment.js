@@ -29,11 +29,5 @@ apartmentRouter.get('/:aptId', (req, res, next) => {
     return res.status(200).send(apartment);
   });
   });
-apartmentRouter.put('/:aptId', (req, res, next) => {
-    res.send(`put on ${req.params.aptId}`)
-  })
-apartmentRouter.delete('/:aptId', (req, res, next) => {
-    res.send(`delete on ${req.params.aptId}`)
-  })
 
 module.exports = apartmentRouter

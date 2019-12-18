@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import {Redirect} from 'react-router-dom';
 import {withUser} from '../context/UserProvider';
 
 
@@ -9,7 +10,9 @@ class apartmentForm extends React.Component {
     this.state = {
       address: '',
       bedrooms: '',
-      bathrooms: ''
+      bathrooms: '',
+      submitted: false,
+      submittedObj: ''
     }
   }
 
@@ -26,18 +29,25 @@ class apartmentForm extends React.Component {
       headers: {'Authorization': "bearer " + this.props.token}
     }
     let submitObj = this.state;
-    submitObj.reviews = [];
     axios.post('/api/apartment', submitObj, config)
       .then((res)=> {
-        console.log('posted')
+        this.setState({
+          submitted: true,
+          submittedObj: res.data
+        })
       })
       .catch((err)=> {
         console.dir(err)
       })
   }
 
-
+  // if (this.props.token) {
+  //   return <Redirect to='/' />
+  // }
   render() {
+     if (this.state.submitted) {
+    return <Redirect to={`/apartment/${this.state.submittedObj._id}`} />
+  }
     return (
       // reviews apartments will post with reviews as empty array
       <form onSubmit={this.handleSubmit}>

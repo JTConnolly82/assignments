@@ -32,13 +32,13 @@ class App extends React.Component {
           />
           <ProtectedRoute 
             token={token}
-            path='/apartment'
+            exact path='/apartment'
             component={apartmentForm}
             redirectTo="/auth"
             user={user}
             addReview={addReview}
           />
-          <Route path='/apartments/:_id' component={AptDetails} />
+          <Route path='/apartment/:_id' component={AptDetails} />
           <Route path='/account/:_id' component={Account} />
         </Switch>
       </div>

@@ -1,0 +1,32 @@
+
+
+.review-container {
+  border-radius: 5px;
+  padding: 11px;
+  margin: 14px;
+  width: 700px;
+  -moz-box-shadow:    1px 1px 2px 2px rgb(238, 238, 238);
+  -webkit-box-shadow: 1px 1px 2px 2px rgb(238, 238, 238);
+  box-shadow:         1px 1px 2px 2px rgb(238, 238, 238);
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.review-info {
+  
+}
+
+.review-buttons {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.review-container h2 {
+  font-size: 29px;
+}
+
+.review-container h3 {
+  font-size: 18px;
+}

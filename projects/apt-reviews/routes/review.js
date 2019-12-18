@@ -5,7 +5,7 @@ const Review = require('../models/review');
 
 
 reviewRouter.get('/', (req, res, next) => {
-  Review.find({user: req.user._id}, (err, reviews) => {
+  Review.find( (err, reviews) => {
     if (err) {
       res.status(500);
       return next(err);
@@ -28,8 +28,18 @@ reviewRouter.get('/', (req, res, next) => {
 //   })
 // })
 
+// Apartment.findOne({_id: req.params.aptId}, (err, apartment) => {
+//   console.log(apartment)
+//   if (err) {
+//     res.status(500);
+//     return next(err);
+//   };
+//   return res.status(200).send(apartment);
+// });
+
 reviewRouter.get('/:aptId', (req, res, next) => {
-  Review.find((err, review) => {
+  console.log(req.params.aptId)
+  Review.find({apt: req.params.aptId}, (err, review) => {
     if (err) {
       res.status(500);
       return next(err);
@@ -37,11 +47,6 @@ reviewRouter.get('/:aptId', (req, res, next) => {
     return res.status(200).send(review);
   });
   })
-reviewRouter.put('/:aptId', (req, res, next) => {
-    res.send(`put on ${req.params.aptId}`)
-  })
-reviewRouter.delete('/:aptId', (req, res, next) => {
-    res.send(`delete on ${req.params.aptId}`)
-  })
+
 
 module.exports = reviewRouter;

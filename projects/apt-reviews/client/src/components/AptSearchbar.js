@@ -104,7 +104,7 @@ class AptSearchbar extends React.Component {
                   onRemove={this.handleRemove}
                    />
           {this.state.selectedApt ? 
-            <Link to={`/apartments/${this.state.selectedApt}`} id='search-button'><img id='search-png' src={process.env.PUBLIC_URL + '/search.png'} /></Link>
+            <Link to={`/apartment/${this.state.selectedApt}`} id='search-button'><img id='search-png' src={process.env.PUBLIC_URL + '/search.png'} /></Link>
             :
             <Link to="/" id='search-button'><img id='search-png' src={process.env.PUBLIC_URL + '/search.png'} /></Link>
           }
