@@ -16,11 +16,11 @@ const About = () => {
 
   return (
     <div style={{justifySelf: 'center'}}>
-    {width < 438 ?  
+    {/* {width < 438 ?  
       <MobileLayout />
-    :
-    // if window is bigger than 438 px render this homepage
-    // use diff styling etc 
+    : */}
+    {/* if window is bigger than 438 px render this homepage
+    use diff styling etc  */}
     <div className='large-main-div'>
       <div className='home-link-div'>
         <Link to='/'><img src="https://img.icons8.com/small/31/000000/home.png" /></Link>
@@ -29,7 +29,7 @@ const About = () => {
           <h1>About</h1>
       </div>
     </div>
-    }
+    {/* } */}
       
     </div>
   )

@@ -19,11 +19,11 @@ const Projects = () => {
 
   return (
     <div style={{justifySelf: 'center'}}>
-    {width < 438 ?  
+    {/* {width < 438 ?  
       <MobileLayout />
-    :
-    // if window is bigger than 438 px render this homepage
-    // use diff styling etc 
+    : */}
+    {/* if window is bigger than 438 px render this homepage
+    use diff styling etc  */}
     <div className='large-main-div'>
       <div id='projects-main' className='large-main-inner'>
         <div className='home-link-div'>
@@ -40,7 +40,7 @@ const Projects = () => {
         </div>
       </div>
     </div>
-    }
+    {/* } */}
       
     </div>
   )

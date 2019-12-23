@@ -18,29 +18,29 @@ const Nav = () => {
   return (
     <div className='nav-container'>
       <div className='inner-nav'>
-      {width < 438 ?
+      {/* {width < 438 ?
         <>
           {/* <div className='phone-hero'>
             
           </div> */}
-        </>
-            :
+        {/* </>
+            :  */}
             <div className='nav-links'>
-            <Link to='/projects'>
+            <Link className='nav-link-hover-target' to='/projects'>
               <span id='projects-link'>
                 <span className='inner-nav-link'>
                   <h3>Projects</h3>
                 </span>
               </span>
             </Link>
-            <Link to='/about' >
+            <Link className='nav-link-hover-target' to='/about' >
               <span id='about-link'>
                 <span className='inner-nav-link'>
                   <h3>About</h3>
                 </span>
               </span>
               </Link>
-              <Link to='/contact'>
+              <Link className='nav-link-hover-target' to='/contact'>
                 <span id='contact-link'>
                   <span className='inner-nav-link'>
                     <h3>Contact</h3>
@@ -48,7 +48,7 @@ const Nav = () => {
                 </span>
               </Link>
             </div> 
-            } 
+            {/* }  */}
       </div>
     </div>
   )

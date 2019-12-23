@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import ParticleComponent from './ParticleComponent';
 import './styles.css';
 
 
@@ -12,6 +13,7 @@ const LargeHome = () => {
           <h1>John Connolly</h1>
         </div>
         <div className='home-card'>
+          <ParticleComponent />
           <div className='large-home-statement'>
             <h3>Software developer based in Salt Lake City, Utah.</h3>
           </div>
